@@ -1,0 +1,30 @@
+// media size
+
+$screen-sm: 768px;
+
+$screen-md: 992px;
+
+$screen-lg: 1200px;
+
+$screen-xl: 1400px;
+
+
+// colors
+
+$colorWhite : #fff;
+
+$colorLightBrown: #ded6c8;
+
+$colorBorder: #e9e9e9;
+
+@mixin transitionMove() {
+
+    -webkit-transition: all 0.2s linear;
+  
+    -moz-transition: all 0.2s linear;
+  
+    -o-transition: all 0.2s linear;
+  
+    transition: all 0.2s linear;
+  
+}

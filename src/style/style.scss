@@ -1,0 +1,140 @@
+@import "elements";
+@import "reset";
+
+.appRoot {
+    height: 100vh;
+    background-color: $colorWhite;
+    padding: 20px 80px;
+}
+
+.topLayout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 10px;
+
+    .imageMain {
+        padding-right: 10px;
+    }
+}
+
+.btnLink {
+    padding: 5px 10px;
+    border-radius: 6px;
+    background-color: $colorLightBrown;
+}
+
+.txtBox {
+    padding-bottom: 10px;
+}
+
+.btnsBox {
+    .btnLink {
+        margin-right: 10px;
+    }
+}
+
+.itemInList {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid $colorBorder;
+}
+
+.listLayout {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 75%;
+    width: 70%;
+    overflow: auto;
+}
+
+.listRow {
+    display: flex;
+
+    .label {
+        padding-right: 10px;
+    }
+}
+
+.divCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.loader {
+    border: 16px solid #d2dbdd;
+    border-radius: 50%;
+    border-top: 16px solid #104d77;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.inputSearchBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 0 10px 0;
+
+    .label {
+        padding-right: 10px;
+    }
+
+    .inputContainer {
+        padding: 2px 12px;
+        border: 1px solid $colorBorder;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .btnLink {
+        border-radius: 0 10px 10px 0;
+    }
+
+}
+
+.imgContainer {
+    width: 150px;
+    height: 100%;
+}
+
+.aboutContainer {
+    height: 100%;
+}
+
+.spaceBottom {
+    padding-bottom: 20px;
+}
+
+.bottomLayout {
+    display: flex;
+    overflow: auto;
+    gap: 10px;
+    padding-top: 100px;
+}

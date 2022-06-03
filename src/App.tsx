@@ -1,24 +1,22 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './style/style.scss';
+import './style/style768.scss';
+import './style/style1400.scss';
+import { Routes, Route, Link } from "react-router-dom";
+import AboutPage from './pages/aboutPage';
+import ImageByDate from './pages/imageByDate';
+import MarsWeather from './pages/marsWeather';
+// import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="appRoot">
+      <Routes>
+        <Route path="/" element={<AboutPage />} />
+        <Route path="/imageByDate" element={<ImageByDate />} />
+        <Route path="/weather" element={<MarsWeather />} />
+      </Routes>
     </div>
   );
 }

@@ -1,0 +1,361 @@
+@import "elements";
+
+/* start reset*/
+
+ 
+
+* {
+    box-sizing: border-box;
+
+    &:before,
+
+    &:after {
+
+        box-sizing: border-box;
+
+    }
+
+ 
+
+    &:focus {
+
+        outline: none !important;
+
+    }
+
+}
+ 
+
+html {
+
+    height: 100%;
+
+}
+
+ 
+
+body {
+
+    height: 100%;
+
+    margin: 0;
+
+    font-size: 10px !important;
+
+    line-height: initial;
+
+}
+
+ 
+
+.appRoot {
+
+    height: 100%;
+
+}
+
+ 
+
+h1,
+
+h2,
+
+h3,
+
+h4,
+
+h5,
+
+h6,
+
+p {
+
+    margin-top: 0;
+
+    margin-bottom: 0;
+
+}
+
+ 
+
+ul,
+
+ol,
+
+li {
+
+    padding: 0;
+
+    margin: 0;
+
+    list-style: none;
+
+}
+
+ 
+
+th {
+
+    font-weight: normal;
+
+}
+
+ 
+
+button {
+
+    min-width: 0;
+
+    padding: 0;
+
+    background: none;
+
+    border: none;
+
+    font-size: 10px;
+
+    cursor: pointer;
+
+ 
+
+    &:disabled {
+
+        opacity: 0.7;
+
+        cursor: no-drop;
+
+    }
+
+}
+
+ 
+
+input,
+
+textarea,
+
+select,
+
+button {
+
+    font-family: inherit;
+
+}
+
+ 
+
+button {
+
+    min-width: 0;
+
+    padding: 0;
+
+    background: none;
+
+    border: none;
+
+}
+ 
+
+button,
+
+a {
+
+    @include transitionMove();
+
+}
+
+ 
+
+
+p {
+
+    font-size: 1.4em;
+
+    margin: 0;
+
+}
+
+ 
+
+strong {
+
+    font-weight: 600;
+
+}
+
+ 
+
+textarea,
+
+input {
+
+    border-radius: 0;
+
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    &:disabled {
+
+        background-color: rgba(239, 239, 239, 0.3);
+
+        cursor: no-drop;
+
+    }
+
+}
+
+ 
+
+iframe {
+
+    border: none;
+
+}
+
+ 
+
+input:-webkit-autofill,
+
+input:-webkit-autofill:hover,
+
+input:-webkit-autofill:focus,
+
+input:-webkit-autofill:active,
+
+input:-internal-autofill-selected {
+
+     box-shadow: 0 0 0 30px white inset !important;
+
+     -webkit-box-shadow: 0 0 0 30px white inset !important;
+
+    background-color: $colorWhite  !important;
+
+}
+
+ 
+
+input[type="number"]::-webkit-inner-spin-button,
+
+input[type="number"]::-webkit-outer-spin-button {
+
+    -webkit-appearance: none;
+
+    margin: 0;
+
+}
+
+ 
+
+input::-webkit-clear-button,
+
+input::-webkit-inner-spin-button,
+
+input::-webkit-calendar-picker-indicator {
+
+    display: none;
+
+}
+
+ 
+
+input[type="radio"] {
+
+    position: absolute;
+
+    width: 1px;
+
+    height: 1px;
+
+    padding: 0;
+
+    margin: -1px;
+
+    overflow: hidden;
+
+    clip: rect(0, 0, 0, 0);
+
+    border: 0;
+
+    cursor: pointer;
+
+}
+
+ 
+
+input::-webkit-outer-spin-button,
+
+/* Removes arrows */
+
+ 
+
+input::-webkit-inner-spin-button,
+
+/* Removes arrows */
+
+ 
+
+input::-webkit-clear-button {
+
+    /* Removes blue cross */
+
+    -webkit-appearance: none !important;
+
+    margin: 0;
+
+}
+
+ 
+
+input::-webkit-inner-spin-button,
+
+input::-webkit-calendar-picker-indicator {
+
+    display: none;
+
+    -webkit-appearance: none;
+
+}
+
+ 
+
+input[type="datetime-local"] {
+
+    -webkit-appearance: none;
+
+}
+
+ 
+
+textarea {
+
+    resize: none;
+
+    overflow-x: hidden !important;
+
+    overflow-y: auto !important;
+
+}
+
+ 
+
+label {
+
+    font-weight: normal;
+
+    margin-bottom: 0;
+
+}
+
+ 
+
+select {
+
+    opacity: 0;
+
+    font-size: 16px !important;
+
+}
